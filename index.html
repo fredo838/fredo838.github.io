@@ -1,7 +1,89 @@
 <!DOCTYPE html>
 <html>
+<head>
+<script src="./ping.js"></script>
+<script src="./wol.js"></script>
+
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<h1>Outpost Status</h1>
+
+<h3>Properties</h3>
+
+<p id="state">The Outpost Server is * on IP address *. </p>
+If it is offline, give it a wake-up call:
+<button type="button" onclick="wake_own()">Wake Up Outpost, using website</button>
+<button type="button" onclick="wake_external()">Wake Up Outpost, using implementation</button>
+
+<p id="WOL Result">Last wake-up sent:   </p>
+
+
+<h3>Connect</h3>
+<h4>Using Windows Cmd</h4>
+<p id="windows">
+To connect to Oupost: <br> 
+1) Install PuTTY.exe 
+<button type="button" onclick="putty()">Go to putty download page</button>
+<button type="button" onclick="download_putty()">Download putty directly</button><br>
+2) Launch PuTTY.exe<br> 
+3) Fill in the IP address<br>
+4) Start your session<br>
+</p>
+<h4>Using Mac</h4>
+<p id="mac">*</p>
+<h4>Using Linux</h4>
+<p id="linux">*</p>
+<h4>Cross platform using Firefox </h4>
+1) Install FireSSH 
+
+
+
+
+<script>
+	var ip = "216.58.208.238"
+	var mac = "20:DE:20:DE:20:DE"
+	
+	function PingTest() {
+		ping(ip).then(function(delta) {
+			document.getElementById("state").innerHTML = "The Outpost Server is Online on IP address " + ip + ". Refresh the page to test again";
+		}).catch(function(err) {
+			document.getElementById("state").innerHTML = "The Outpost Server is Offline on IP address " + ip + ". Refresh the page to test again.";
+		});
+	}
+		
+    function wake_own(){
+		var url = 'https://www.depicus.com/wake-on-lan/woli?m=001143BDA600&i=' + ip + "&s=255.255.255.255&p=4321";
+		window.open(url, '_blank');
+		// win.focus();
+		var d = new Date();
+		document.getElementById("WOL Result").innerHTML =  "Last wake-up sent:   " + d.getHours()  + "h" + d.getMinutes() + "m" + d.getSeconds() + "s";
+    }
+
+	function putty() {
+		var url = 'http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html';
+		window.open(url, '_blank');
+		// win.focus();
+		var d = new Date();
+		document.getElementById("WOL Result").innerHTML =  "Last wake-up sent:   " + d.getHours()  + "h" + d.getMinutes() + "m" + d.getSeconds() + "s";
+	}
+	
+	function download_putty() {
+		var url = 'https://the.earth.li/~sgtatham/putty/latest/x86/putty.exe';
+		window.open(url, '_blank');
+	}
+	
+	function wake_external() {
+		wake(mac, address);
+	}
+	
+	function general() {
+		PingTest();
+	}
+	
+	general();
+
+</script>
+
 </body>
 </html>
