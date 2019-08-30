@@ -66,7 +66,8 @@ class TensorflowJsModel extends Component {
 
     initializeModel = async () => {
         this.setState({loadingModel: true})
-        const modelAPI = "htn"
+        const modelAPI = "https://raw.githubusercontent.com/fredo838/fredo838.github.io/master/model/model.json"
+        const model = await tf.loadLayersModel(modelAPI)
         this.setState({model: model, loadingModel: false, modelLoaded: true})
     }
 
@@ -88,6 +89,11 @@ class TensorflowJsModel extends Component {
               width={this.state.width}
               height={this.state.height}>
             </canvas>
+          </div>
+          <div className="uk-flex uk-flex-center">
+            <button className="uk-button uk-button-default" onClick={this.initializeModel}>
+               Start
+            </button>
           </div>
           {(this.state.loadingModel) ?
            (<div className="uk-flex uk-flex-center">
