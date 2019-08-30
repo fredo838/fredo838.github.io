@@ -1,0 +1,80 @@
+{
+  "_args": [
+    [
+      "typeface-roboto",
+      "/app"
+    ]
+  ],
+  "_from": "typeface-roboto@latest",
+  "_hasShrinkwrap": false,
+  "_id": "typeface-roboto@0.0.75",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/typeface-roboto",
+  "_nodeVersion": "12.3.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/typeface-roboto_0.0.75_1563396718408_0.9839651877580922"
+  },
+  "_npmUser": {
+    "email": "mathews.kyle@gmail.com",
+    "name": "kylemathews"
+  },
+  "_npmVersion": "6.9.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "typeface-roboto",
+    "raw": "typeface-roboto",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/typeface-roboto/-/typeface-roboto-0.0.75.tgz",
+  "_shasum": "98d5ba35ec234bbc7172374c8297277099cc712b",
+  "_shrinkwrap": null,
+  "_spec": "typeface-roboto",
+  "_where": "/app",
+  "author": {
+    "email": "mathews.kyle@gmail.com",
+    "name": "Kyle Mathews"
+  },
+  "dependencies": {},
+  "description": "Roboto typeface",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "fileCount": 28,
+    "integrity": "sha512-VrR/IiH00Z1tFP4vDGfwZ1esNqTiDMchBEXYY9kilT6wRGgFoCAlgkEUMHb1E3mB0FsfZhv756IF0+R+SFPfdg==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdL4pvCRA9TVsSAnZWagAAiIAP/iOxHDrqmaqQt0McdrFI\nHWKGZRJKswVPg0aR8rZ7B+wAA0sTMW7iTvI2pw/Tw4TdXkOCs47rd9lPa1cF\n72sTBgFckqw0zP5mNZpcsBCOudIn15erZAhTxPTgOIG6fK5GqYWbc4MqI5jB\niOvFw3lejcEklSAW6wWLMRsJFsIMY4DP5T8aCSoo22ydI+11Lwfi1ajElNRm\nWN3ZxLcNCL7/l3ZU4k3WI6CmkJbMdRszHJRtkbQie6akP/bbePWaof2ordD4\n3Icsg0gkXXakStOXYl2/EKKMuSVD79ut3kITJ/wmt19M/2crvdGJ8ANByQHQ\nNZ9ATolgFWJFXb1+0/YhTGqdDiK91jq7C9C57PWoieF1BqWaaeJxifGg3kyj\nhCoiV2QPmOiYLhQ6pgdkJSWD7bYyGTFgcsEHQnhzNoocUYn1eP1QYOmncjLX\nVwucOl7+D6CUYWVwJQ1oej9ithS1lDIQLka67EznEYVsItf/PWdhnhomwrtm\nf8YarVIEs0VxIb5mGSGEN2iw4P0acnfpvEzEFIS+4mZWx+KOqDguxP3vTTgN\nJ5OyMEJ7twHS2Podzo7WtdaDC1ry6sWd3lWFImiEAYjoCVwnFkSp8ndepe3O\noAKmojEbbFyOCbkKPmd4ZVH097eT8hiy8hBvLxyVKDd8PkNdBKjTPmvzbOs+\nIQIb\r\n=pUNc\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "98d5ba35ec234bbc7172374c8297277099cc712b",
+    "tarball": "https://registry.npmjs.org/typeface-roboto/-/typeface-roboto-0.0.75.tgz",
+    "unpackedSize": 458413
+  },
+  "keywords": [
+    "font",
+    "font family",
+    "google fonts",
+    "roboto",
+    "typeface"
+  ],
+  "license": "MIT",
+  "main": "index.css",
+  "maintainers": [
+    {
+      "name": "kylemathews",
+      "email": "mathews.kyle@gmail.com"
+    }
+  ],
+  "name": "typeface-roboto",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KyleAMathews/typefaces/tree/master/packages/roboto"
+  },
+  "version": "0.0.75"
+}
