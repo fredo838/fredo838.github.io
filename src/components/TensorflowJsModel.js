@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import * as tf from '@tensorflow/tfjs';
-import { LoginButton } from './LoginButton'
 
 class TensorflowJsModel extends Component {
 
@@ -9,7 +8,6 @@ class TensorflowJsModel extends Component {
         this.state = {
             videoTag: React.createRef(),
             canvasTag: React.createRef(),
-            loginButtonRef: React.createRef(),
             width: 50,
             height: 50,
             predictionResult: null,
@@ -68,8 +66,7 @@ class TensorflowJsModel extends Component {
 
     initializeModel = async () => {
         this.setState({loadingModel: true})
-        const modelAPI = "https://grass-detector-models.storage.googleapis.com/model_8/model.json"
-        const model = await tf.loadLayersModel(modelAPI+"?access_token="+this.state.loginButtonRef.current.getAccessToken())
+        const modelAPI = "htn"
         this.setState({model: model, loadingModel: false, modelLoaded: true})
     }
 
@@ -91,9 +88,6 @@ class TensorflowJsModel extends Component {
               width={this.state.width}
               height={this.state.height}>
             </canvas>
-          </div>
-          <div className="uk-flex uk-flex-center uk-padding-small">
-            <LoginButton ref={this.state.loginButtonRef} postProcess={this.initializeModel}></LoginButton>
           </div>
           {(this.state.loadingModel) ?
            (<div className="uk-flex uk-flex-center">
